@@ -1,24 +1,13 @@
 """テスト用のサンプルモジュール"""
 
-DEFAULT_LANG = "en"
 
-
-def greet(name: str, lang: str = DEFAULT_LANG) -> str:
-    """名前と言語を受け取って挨拶文を返す"""
-    if lang == "ja":
-        return f"こんにちは、{name}さん！"
+def greet(name: str) -> str:
+    """名前を受け取って挨拶文を返す"""
     return f"Hello, {name}!"
-
-
-def add(a: int, b: int) -> int:
-    """2つの整数の和を返す"""
-    return a + b
 
 
 def main() -> None:
     print(greet("World"))
-    print(greet("世界", lang="ja"))
-    print(f"1 + 2 = {add(1, 2)}")
 
 
 if __name__ == "__main__":
