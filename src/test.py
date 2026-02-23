@@ -1,6 +1,6 @@
 """テスト用のサンプルモジュール"""
 
-DEFAULT_LANG = "en"
+DEFAULT_LANG = "es"
 
 
 def greet(name: str, lang: str = DEFAULT_LANG) -> str:
