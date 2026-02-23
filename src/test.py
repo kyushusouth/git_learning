@@ -10,15 +10,9 @@ def greet(name: str, lang: str = DEFAULT_LANG) -> str:
     return f"Hello, {name}!"
 
 
-def add(a: int, b: int) -> int:
-    """2つの整数の和を返す"""
-    return a + b
-
-
 def main() -> None:
     print(greet("World"))
     print(greet("世界", lang="ja"))
-    print(f"1 + 2 = {add(1, 2)}")
 
 
 if __name__ == "__main__":
